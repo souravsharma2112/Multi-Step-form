@@ -1,0 +1,118 @@
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  height: 180px;
+}
+.plan {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.plan_icon span {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: #1f50ef;
+  color: #fff;
+}
+
+/* toggle button  */
+.plan_period {
+  margin-top: 3rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+  margin: 0rem 0.6rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #100239;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #010336;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #020a3a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ============= Media ============= */
+
+@media (min-width: 0px) and (max-width: 590px) {
+  .plans {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+}
+/* Media Query for Mobile Devices */
+@media (min-width: 590px) and (max-width: 655px) {
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 655px) and (max-width: 870px) {
+  .plans {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 870px) and (max-width: 1024px) {
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* Media Query for Large screens */
+/* @media (min-width: 1281px) {
+  
+} */

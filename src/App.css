@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    
+    --primary-800: hsl(213, 96%, 18%);
+    --primary-400: hsl(243, 100%, 62%);
+    --primary-300: hsl(228, 100%, 84%);
+    --primary-200: hsl(206, 94%, 87%);
+    --secondary-400: hsl(354, 84%, 57%);
+    --neutral-400: hsl(231, 11%, 63%);
+    --neutral-300: hsl(229, 24%, 87%);
+    --neutral-200: hsl(217, 100%, 97%);
+    --neutral-100: hsl(231, 100%, 99%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none !important;
+}
+.mt-2{
+    padding-top: 3.5rem !important;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

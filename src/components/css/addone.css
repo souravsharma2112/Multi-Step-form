@@ -1,0 +1,40 @@
+.service_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.service_box{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid var(--neutral-300);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.service_details h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--primary-800);
+}
+.service_details p {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--neutral-400) !important;
+    line-height: 1.5em;
+}
+.service_box p{
+    font-weight: 500;
+    color: var(--primary-400);
+}
+.service_box:hover{
+    border: 1px solid var(--primary-400);
+}
+input.service_checkbox {
+   width: 1.2rem;
+   height: 1.2rem;
+   margin-right: 1.4rem;
+   accent-color: var(--primary-400);
+   cursor: pointer;
+}
